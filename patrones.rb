@@ -72,10 +72,14 @@ end
 
 def numero_cero(size)
     o = '*' * size + "\n"
-
+    l = 0
+    r = size - 3
+    spa = "\s"
     (size-2).times do
         o += '*'
-        o += ("\s" * (size-2)) + "*\n"
+        o += ("#{spa * l }*#{spa * r }" + "*\n")
+        l += 1
+        r -= 1
     end
     o += '*' * size
     
