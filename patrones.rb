@@ -27,4 +27,21 @@ def letra_i(size)
 end
 
 
-puts letra_i(n)
+def letra_z(size)
+    
+    z = "*" * size + "\n"
+    cont = 0
+    sizez = size -2
+    until (sizez== cont) do
+        space = "\s"
+        
+            z += "#{space * sizez}*\n"
+            sizez -= 1
+
+    end
+    z += '*' * size
+    
+    return z
+end
+
+puts letra_z(n)
