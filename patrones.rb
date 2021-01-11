@@ -86,12 +86,31 @@ def numero_cero(size)
     return o
 end
 
-# z += "#{"\s" * sizez}*\n"
-# sizez -= 1
+def navidad(size)
+    spa = "\s"
+    exspa = (size / 2 + 1) #contador de espacios exterior
+    s = "*#{spa}"
+    b = 1
+    a = ""
+
+    (size +1).times do |i|
+        if i <= (size - 2)
+            a += "#{spa * exspa}#{s * b}\n"
+            b += 1
+            exspa -= 1
+        else 
+            exspa = (size / 2 + 1)
+             a += "#{spa * exspa}*\n"
+        end
+    end
+    a += "#{spa}#{s * (size-2)}"
+    return a
+end
 
 # puts letra_o(n)
 # puts letra_i(n)
 # puts letra_z(n)
 # puts letra_x(n)
-puts numero_cero(n)
+# puts numero_cero(n)
+puts navidad(n)
 
