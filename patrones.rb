@@ -107,10 +107,15 @@ def navidad(size)
     return a
 end
 
-# puts letra_o(n)
-# puts letra_i(n)
-# puts letra_z(n)
-# puts letra_x(n)
-# puts numero_cero(n)
+puts letra_o(n)
+puts
+puts letra_i(n)
+puts
+puts letra_z(n)
+puts
+puts letra_x(n)
+puts
+puts numero_cero(n)
+puts
 puts navidad(n)
 
